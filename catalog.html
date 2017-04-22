@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+<!-- HEADER -->
+<header class="main-header">
+  <div class="container">
+            <div class="logo">
+        <img src="img/nerds-logo.png" alt="" width="220" height="81.50">
+      </div>
+  <nav class="navigation">
+    <ul class="navigation-list">
+      <li class="navigation-item"><a href="#">Студия</a></li>
+      <li class="navigation-item"><a href="#">Клиенты</a></li>
+      <li class="navigation-item"><a href="#">Магазин</a></li>
+      <li class="navigation-item"><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="basket">
+        <a href="#">Корзина</a>
+  </div>
+  <b class="catalog-title">Магазин готовых шаблонов</b>
+  </div>
+</header>
+<!-- MAIN -->
+  <main>
+    <div class="container">
+      <div class="catalog-filter">
+      <form class="scroll-range" action="#">
+        <!-- Ползунок -->
+        <fieldset>
+          <legend>Стоимость</legend>
+          <input type="range" min="0" max="1500" step="1" value="50" id=get>
+        </fieldset>
+        <!-- Сетка -->
+        <fieldset class="catalog-grid">
+          <legend>Сетка:</legend>
+          <input type="radio" id="adapt" checked name="grid">
+          <label for="adapt">Адаптивная</label>
+          <input type="radio" id="fix" name="grid">
+          <label for="fix">Фиксированная</label>
+          <input type="radio" id="rubber"name="grid">
+          <label for="rubber">Резиновая</label>
+        </fieldset>
+        <!-- Особенности -->
+        <fieldset class="catalog-features">
+          <legend>Особенности:</legend>
+          <input type="checkbox" id="slider" checked name="slide">
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" id="feature" name="block">
+          <label for="feature">Блок преимуществ</label>
+          <input type="checkbox" id="news" checked name="news">
+          <label for="news">Новости</label>
+          <input type="checkbox" id="gallery"name="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" id="bucket"name="bucket">
+          <label for="bucket">Корзина</label>
+        </fieldset>
+        <input class="filter-button" type="submit" value="Показать">
+      </form>
+      </div>
+      <!-- Карточки шаблонов -->
+    <div class="catalog-gallery">
+        <div class="gallery-filter">
+          <span>Сортировать:</span>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По названию</a>
+        </div>
+        <div class="gallery">
+          <article class="sedona">
+            <img src="#" alt="">
+            <div class="hover">
+              <h2>заголовок</h2>
+              <p>текст</p>
+              <a href="#" class="gallery-btn">9900 Руб.</a>
+            </div>
+          </article>
+          <article class="pink">
+            <img src="#" alt="">
+            <div class="hover">
+              <h2>заголовок</h2>
+              <p>текст</p>
+              <a href="#" class="gallery-btn">хххРуб.</a>
+            </div>
+          </article>
+          <article class="barbershop">
+            <img src="#" alt="">
+            <div class="hover">
+              <h2>заголовок</h2>
+              <p>текст</p>
+              <a href="#" class="gallery-btn">хххРуб.</a>
+            </div>
+          </article>
+          <article class="mishka">
+            <img src="#" alt="">
+            <div class="hover">
+              <h2>заголовок</h2>
+              <p>текст</p>
+              <a href="#" class="gallery-btn">хххРуб.</a>
+            </div>
+          </article>
+          <article class="school">
+            <img src="#" alt="">
+            <div class="hover">
+              <h2>заголовок</h2>
+              <p>текст</p>
+              <a href="#" class="gallery-btn">хххРуб.</a>
+            </div>
+          </article>
+          <article class="kvass">
+            <img src="#" alt="">
+            <div class="hover">
+              <h2>заголовок</h2>
+              <p>текст</p>
+              <a href="#" class="gallery-btn">хххРуб.</a>
+            </div>
+          </article>
+        </div>
+      <div class="page-navigation">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+      </div>
+    </div>
+    </div>
+  </main>
+  <!-- MAP -->
+  <aside class="map">
+    <img src="img/fullmap.png" width="100%" height="250px"alt="" usemap="#image-map">
+  </aside>
+  <!-- FOOTER -->
+  <footer class="main-footer">
+      <section class="social">
+      <a class="social-btn vk" href="#">Vkontakte</a>
+      <a class="social-btn fb" href="#">Facebook</a>
+      <a class="social-btn inst" href="#">Instagram</a>
+    </section>
+    <section class="discount">
+      <b class="discount-title">Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </footer>
+  </body>
+</html>
