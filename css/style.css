@@ -2,20 +2,138 @@ body {
 font-family: Roboto, Arial, sans-serif;
 margin: 0;
 padding: 0;
+min-width: 1150px;
+min-height: 1500px;
 }
 
-header {
-  background-color: #eeeeee;
+
+.container {
+  width: 1140px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
-.header-title {
-font-size: 55px;
-font-weight: medium;
-line-height: 55px;
+.main-header {
+  margin-top: 50px;
 }
 
-.features-title {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 30px;
+.navigation {
+  width: 660px;
+  float: left;
+  background-color: green;
+}
+
+.navigation-list li {
+  display: inline;
+}
+
+.logo {
+  width: 180px;
+  float: left;
+}
+
+.basket {
+  width: 200px;
+  float: right;
+  background-color: red;
+}
+
+.slider {
+  width: 1130px;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.features {
+  margin-top: 70px;
+}
+
+.web {
+  float: left;
+  margin-right: 100px;
+  width: 300px;
+}
+
+.applications {
+  float: left;
+  margin-right: 100px;
+  width: 300px;
+}
+
+.presentation: {
+  float: left;
+  margin-left: 100px;
+  width: 300px;
+}
+
+.orders {
+  width: 700px;
+  float: left;
+}
+
+.about {
+width: 400px;
+float: right;
+}
+
+.orders-about {
+margin-top: 80px;
+}
+
+.sponsors {
+width: 1160px;
+clear: both;
+}
+
+.map {
+  margin-top: 80px;
+}
+
+.social {
+width: 260px;
+float: left;
+}
+
+.discount {
+  width: 680px;
+  float: right;
+}
+
+/*CATALOG*/
+
+.catalog-title {
+  float: left;
+  width: 820px;
+  background-color: grey;
+  clear: both;
+}
+
+.catalog-filter {
+float: left;
+width: 300px;
+background-color: pink;
+  }
+
+.gallery {
+float: right;
+width: 800px;
+background-color: lightblue;
+}
+
+.catalog-gallery {
+  margin-top: 65px;
+}
+
+.page-navigation {
+width: 500px;
+clear: both;
+background-color: yellow;
 }
