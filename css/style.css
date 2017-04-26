@@ -2,14 +2,11 @@ body {
 font-family: Roboto, Arial, sans-serif;
 margin: 0;
 padding: 0;
-min-width: 1150px;
-min-height: 1500px;
 }
 
-
 .container {
-  width: 1140px;
-  padding: 0 10px;
+  width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -39,12 +36,23 @@ min-height: 1500px;
 }
 
 .slider {
-  width: 1130px;
+  position: relative;
+  width: 100%;
   clear: both;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 200px;
 }
 
+.slide {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.slide-active {
+  display: block;
+
+}
 
 .clearfix::after {
   content: "";
@@ -123,17 +131,26 @@ background-color: pink;
   }
 
 .gallery {
-float: right;
 width: 800px;
 background-color: lightblue;
+font-size: 0;
+}
+
+.sort-arrows {
+  float: right;
+}
+
+.gallery-item {
+  font-size: 16px;
+  width: 360px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .catalog-gallery {
-  margin-top: 65px;
+  float: right;
 }
 
 .page-navigation {
-width: 500px;
-clear: both;
 background-color: yellow;
 }

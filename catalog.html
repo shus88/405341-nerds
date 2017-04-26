@@ -27,17 +27,17 @@
   </div>
 </header>
 <!-- MAIN -->
-  <main>
-    <div class="container">
+  <main class="main-content">
+    <div class="container clearfix">
       <div class="catalog-filter">
       <form class="scroll-range" action="#">
         <!-- Ползунок -->
-        <fieldset>
+        <fieldset class="field-group">
           <legend>Стоимость</legend>
           <input type="range" min="0" max="1500" step="1" value="50" id=get>
         </fieldset>
         <!-- Сетка -->
-        <fieldset class="catalog-grid">
+        <fieldset class="catalog-grid field-group">
           <legend>Сетка:</legend>
           <input type="radio" id="adapt" checked name="grid">
           <label for="adapt">Адаптивная</label>
@@ -47,7 +47,7 @@
           <label for="rubber">Резиновая</label>
         </fieldset>
         <!-- Особенности -->
-        <fieldset class="catalog-features">
+        <fieldset class="catalog-features field-group">
           <legend>Особенности:</legend>
           <input type="checkbox" id="slider" checked name="slide">
           <label for="slider">Слайдер</label>
@@ -65,14 +65,19 @@
       </div>
       <!-- Карточки шаблонов -->
     <div class="catalog-gallery clearfix">
-        <div class="gallery-filter">
+        <div class="gallery-filter clearfix">
           <span>Сортировать:</span>
           <a href="#">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По названию</a>
+          <div class="sort-arrows">
+            <a class="arrow arrow-top" href="#">top</a>
+            <a class="arrow arrow-bottom" href="#">bottom</a>
+
+          </div>
         </div>
         <div class="gallery">
-          <article class="sedona">
+          <article class="sedona gallery-item">
             <img src="#" alt="">
             <div class="hover">
               <h2>заголовок</h2>
@@ -80,7 +85,7 @@
               <a href="#" class="gallery-btn">9900 Руб.</a>
             </div>
           </article>
-          <article class="pink">
+          <article class="pink gallery-item">
             <img src="#" alt="">
             <div class="hover">
               <h2>заголовок</h2>
@@ -88,7 +93,7 @@
               <a href="#" class="gallery-btn">хххРуб.</a>
             </div>
           </article>
-          <article class="barbershop">
+          <article class="barbershop gallery-item">
             <img src="#" alt="">
             <div class="hover">
               <h2>заголовок</h2>
@@ -96,7 +101,7 @@
               <a href="#" class="gallery-btn">хххРуб.</a>
             </div>
           </article>
-          <article class="mishka">
+          <article class="mishka gallery-item">
             <img src="#" alt="">
             <div class="hover">
               <h2>заголовок</h2>
@@ -104,7 +109,7 @@
               <a href="#" class="gallery-btn">хххРуб.</a>
             </div>
           </article>
-          <article class="school">
+          <article class="school gallery-item">
             <img src="#" alt="">
             <div class="hover">
               <h2>заголовок</h2>
@@ -112,7 +117,7 @@
               <a href="#" class="gallery-btn">хххРуб.</a>
             </div>
           </article>
-          <article class="kvass">
+          <article class="kvass gallery-item">
             <img src="#" alt="">
             <div class="hover">
               <h2>заголовок</h2>
@@ -121,21 +126,21 @@
             </div>
           </article>
         </div>
-      <div class="page-navigation">
+        <div class="page-navigation">
           <a href="#" class="active">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
           <a href="#">Следующая</a>
-      </div>
+        </div>
     </div>
     </div>
+    <aside class="map">
+      <img src="img/fullmap.png" width="100%" height="250px"alt="" usemap="#image-map">
+    </aside>
   </main>
-  <!-- MAP -->
-  <aside class="map">
-    <img src="img/fullmap.png" width="100%" height="250px"alt="" usemap="#image-map">
-  </aside>
   <!-- FOOTER -->
-  <footer class="main-footer">
+  <footer class="main-footer clearfix">
+    <div class="container">
       <section class="social">
       <a class="social-btn vk" href="#">Vkontakte</a>
       <a class="social-btn fb" href="#">Facebook</a>
@@ -145,6 +150,7 @@
       <b class="discount-title">Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
+          </div>
   </footer>
   </body>
 </html>
